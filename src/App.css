@@ -10,8 +10,8 @@
 .mainMenuDiv {
   z-index:10;
   position: fixed;
-  width: 25%;
-  left: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
   background-color: white;
   padding: 0.7rem;
   border-bottom-left-radius: 20px;
@@ -29,6 +29,26 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+@media (max-width: 700px) {
+
+  .mainMenuDiv {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mainMenuAnchorGroup {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainMenuAnchorGroup img {
+    display: none;
+  }
+
 }
 
 .App-header {
