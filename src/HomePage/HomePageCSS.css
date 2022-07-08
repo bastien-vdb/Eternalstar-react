@@ -330,6 +330,10 @@ a .btn {
     justify-content: space-between;
 }
 
+.AnchorHomeButton {
+    width: 100px;
+}
+
 /* Footer */
 footer {
     background: var(--color1);

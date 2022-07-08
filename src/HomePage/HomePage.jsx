@@ -68,12 +68,12 @@ let tl = gsap.timeline();
                     </ul>
                 </div>
                 <div className="heroG">
-                    <div style={{width:'80%'}}>
+                    <div style={{width:'100%'}}>
                         <h1 style={{color:'white'}}>Devenez un acteur reconnu<span className="red"> dans le WEB3.0</span></h1>
                         <p>Tout savoir sur notre offre</p>   
                         <Anchor>
-                        <button style={{width:'150px', marginLeft:'50%'}} className="btn">
-                            <AnchorLink href="#nos_services" title="Nos services">
+                        <button className="btn AnchorHomeButton">
+                            <AnchorLink href="#nos_services" title="Offres">
                             </AnchorLink>
                         </button>
                         </Anchor>
@@ -114,8 +114,8 @@ let tl = gsap.timeline();
                             Contactez-nous ! 
                             </p>
                             <Anchor>
-                                <button style={{width:'180px', marginLeft:'50%'}} className="btn">
-                                    <AnchorLink href="#contact" title="Premier contact">
+                                <button className="btn AnchorHomeButton">
+                                    <AnchorLink href="#contact" title="Go">
                                     </AnchorLink>
                                 </button>
                             </Anchor>
@@ -124,7 +124,7 @@ let tl = gsap.timeline();
             </section>
 
             <section>
-                <div className="team" id="nos_services">
+                <div className="team" id="nos_services" >
                     <div className="container">
                     <h2 data-aos="zoom-in">
                         Nos <span className="red">services</span>

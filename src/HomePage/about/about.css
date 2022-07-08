@@ -1,7 +1,5 @@
 .contact form{
     display: flex;
-    margin: 2rem auto;
-    padding: 2rem;
     flex-direction: column;
 }
 
@@ -10,21 +8,21 @@
 }
 
 .aboutInputField{
+    color: black;
     display: block;
     width: 100%;
     border-radius: 30px;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 .contact form textarea{
-
+    color: black;
     display: block;
     width: 100%;
     border-radius: 30px;
     padding: 1rem;
-    margin: 1rem;
-
+    margin: 0.5rem;
     max-height: 200px;
     max-width: 600px;
 }

@@ -22,13 +22,15 @@ const About = () => {
     return (
         <div className='contact'>
             <form ref={form} onSubmit={sendEmail}>
-                <label htmlFor='user_name'>Name</label>
+                <label htmlFor='user_name'>Nom</label>
                 <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
                 <label>Email</label>
                 <input type="email" name="user_email" className='aboutInputField' />
+                <label>Téléphone</label>
+                <input type="tel" name="user_phone" className='aboutInputField' />
                 <label>Message</label>
                 <textarea name="message" />
-                <input type="submit" value="Send" className="aboutButton" />
+                <input type="submit" value="Envoyer" className="aboutButton" />
             </form>
         </div>
     );
