@@ -7,6 +7,24 @@
   pointer-events: none;
 }
 
+.mainMenuDiv {
+  z-index:10;
+  position: fixed;
+  width: 25%;
+  left: 40%;
+  background-color: white;
+  padding: 0.7rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 0.9;
+}
+
+.mainMenuAnchorGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

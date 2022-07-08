@@ -46,6 +46,10 @@ a .btn {
     color: var(--color2);
 }
 
+.ant-anchor-ink, .ant-affix {
+    display: none;
+}
+
 .red {
     color: var(--color3);
 }

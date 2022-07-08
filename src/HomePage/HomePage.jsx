@@ -16,12 +16,15 @@ import ALVU from './img/team/ALVU.png';
 import ERSCH from './img/team/ERSCH.png';
 import About from './about/About.js';
 import Anim from './anim/Anim.js';
+import {Anchor} from 'antd';
+import 'antd/dist/antd.css';
 
 function HomePage () {
 
+    const AnchorLink  = Anchor.Link;;
+
 useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    
 
 let tl = gsap.timeline();
 
@@ -33,10 +36,13 @@ let tl = gsap.timeline();
     tl.to('.loading', {
         display: 'none'})
 
+        AOS.init();
+    AOS.refresh();
+
 }, []);
 
     return (
-        <div>
+        <div id='topHomePage'>
             <section className="loading"></section>
             <Anim/>           
             <section className='heroHome'>
@@ -62,12 +68,15 @@ let tl = gsap.timeline();
                     </ul>
                 </div>
                 <div className="heroG">
-                    <div style={{width:'60%'}}>
+                    <div style={{width:'80%'}}>
                         <h1 style={{color:'white'}}>Devenez un acteur reconnu<span className="red"> dans le WEB3.0</span></h1>
-                        <p>Tout savoir sur notre offre</p>
-                        
-                        <Link  to={{hash: "#team"}}><button className="btn">En savoir plus</button></Link>
-                        
+                        <p>Tout savoir sur notre offre</p>   
+                        <Anchor>
+                        <button style={{width:'150px', marginLeft:'50%'}} className="btn">
+                            <AnchorLink href="#nos_services" title="Nos services">
+                            </AnchorLink>
+                        </button>
+                        </Anchor>
                     </div>
                 </div>
                 <div className="heroD"></div>
@@ -97,20 +106,25 @@ let tl = gsap.timeline();
                     <div data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroG">
                         <div>
                             <h1>
-                                <span className="red">EternalStar</span>
+                                <span className="red">Travailler avec nous</span>
                             </h1>
                             <p>
-                                COMIC Friends Museum is a place where Comic creators and comic fans can meet by mint, exchanges or sell NFT of collections newly created eatch month by a brandnew comic creator. 
+                            Besoin d'une équipe compétente et qualifiée pour vous accompagner dans la réalisation de votre projet ?
+                            Vous avez frappé à la bonne porte. Notre travaille consiste à comprendre vos objectifs et à trouver la solution adaptée à vos besoins.
+                            Contactez-nous ! 
                             </p>
-                            <a href="#">
-                                <button className="btn">See on OpenSea</button>
-                            </a>
+                            <Anchor>
+                                <button style={{width:'180px', marginLeft:'50%'}} className="btn">
+                                    <AnchorLink href="#contact" title="Premier contact">
+                                    </AnchorLink>
+                                </button>
+                            </Anchor>
                         </div>
                 </div>
             </section>
 
             <section>
-                <div className="team">
+                <div className="team" id="nos_services">
                     <div className="container">
                     <h2 data-aos="zoom-in">
                         Nos <span className="red">services</span>
@@ -152,7 +166,7 @@ let tl = gsap.timeline();
                 </div>
             </section>
 
-            <section className="hero">
+            <section className="hero" id="contact">
                 <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroG">
                     <div>
                         <br/><br/><br/>
@@ -179,26 +193,33 @@ let tl = gsap.timeline();
             <section>
                 <div className="roadmap">
                     <div className="container">
-                        <h2 data-aos="zoom-in">The <span className="red">Roadmap</span></h2>
+                        <h2 data-aos="zoom-in">The <span className="red">Expertises</span></h2>
                         <div className="line"></div>
                         <div className="bloc" data-aos="zoom-in">
-                            <div className="number">1</div>
-                            <h4>Launch Roadmap</h4>
+                            <div className="number off">2</div>
+                            <h3>NFT Arts</h3>
+                            <p>Notre expertise vous permet de lancer votre projet dans un délai réduit, tout en vous assurant d'une qualité à la hauteur des plus grands projets de collections d'oeuvres d'art numériques.</p>
                         </div>
                         <div className="bloc" data-aos="zoom-in">
                             <div className="number off">2</div>
-                            <h4>Launch Presale</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a repellendus nemo minus alias officia culpa ab. Eveniet esse repudiandae quisquam, necessitatibus iure, voluptatum ullam reiciendis molestias commodi, minima nemo.</p>
+                            <h3>NFT Game</h3>
+                            <p>Vous souhaitez créer un jeu sur le Web3.0 ? Nous vous accompagnons sur la spécification des besoins. Nous nous occupons de la programmation.</p>
                         </div>
                         <div className="bloc" data-aos="zoom-in">
                             <div className="number off">3</div>
-                            <h4>Mint the remaining NFTs on OpenSea</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a repellendus nemo minus alias officia culpa ab. Eveniet esse repudiandae quisquam, necessitatibus iure, voluptatum ullam reiciendis molestias commodi, minima nemo.</p>
+                            <h3>Dapp DEFI</h3>
+                            <p>Un projet sur la finance décentralisée ? Nous vous aidons à lancer votre application tout en respectant les normes juridiques.</p>
                         </div>
                         <div className="bloc" data-aos="zoom-in">
                             <div className="number off">4</div>
-                            <h4>Mint the remaining NFTs on OpenSea</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a repellendus nemo minus alias officia culpa ab. Eveniet esse repudiandae quisquam, necessitatibus iure, voluptatum ullam reiciendis molestias commodi, minima nemo.</p>
+                            <h3>Direction Artistique</h3>
+                            <p>Besoin de conseils pour votre oeuvre ? Notre expertise artistique vous permettra de concrétiser votre objectif.</p>
+                        </div>
+                        <div className="bloc" data-aos="zoom-in">
+                            <div className="number off">4</div>
+                            <h3>Création d'une Communauté</h3>
+                            <p>Votre projet manque de visibilité ? Nous vous accompagnons dans la création d'une communauté.
+                                Discord et Twitter sont les incontournables du moment, mais certains outils qui ne sont pas à négliger, font la différence.</p>
                         </div>
                     </div>
                 </div>
