@@ -104,6 +104,7 @@ a .btn {
 .hero .heroD, .hero .heroG, .hero .heroD_2, .hero .heroD_3 {
     width: 50%;
     height: 100%;
+    padding: 10px;
 }
 
 .hero .heroD {
@@ -331,7 +332,7 @@ a .btn {
 }
 
 .AnchorHomeButton {
-    width: 100px;
+    width: 110px;
 }
 
 /* Footer */

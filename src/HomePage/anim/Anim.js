@@ -25,7 +25,7 @@ function Anim(props) {
     .to(
       ".capsule",
       {
-        scale: 11,
+        scale: 5,
       },
       "<",
     )

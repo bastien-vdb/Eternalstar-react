@@ -24,12 +24,12 @@ const About = () => {
             <form ref={form} onSubmit={sendEmail}>
                 <label htmlFor='user_name'>Nom</label>
                 <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
-                <label>Email</label>
-                <input type="email" name="user_email" className='aboutInputField' />
-                <label>Téléphone</label>
-                <input type="tel" name="user_phone" className='aboutInputField' />
-                <label>Message</label>
-                <textarea name="message" />
+                <label htmlFor='user_email'>Email</label>
+                <input type="email" name="user_email" id="user_email" className='aboutInputField' />
+                <label htmlFor='user_phone'>Téléphone</label>
+                <input type="tel" name="user_phone" id="user_phone" className='aboutInputField' />
+                <label htmlFor='message'>Message</label>
+                <textarea name="message" id="message"/>
                 <input type="submit" value="Envoyer" className="aboutButton" />
             </form>
         </div>

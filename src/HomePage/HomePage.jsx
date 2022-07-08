@@ -47,7 +47,7 @@ let tl = gsap.timeline();
             <Anim/>           
             <section className='heroHome'>
                 <div className='titleHome'>
-                    <h2 style={{color:'white'}}><strong><span className='red'>ETERNALSTAR</span></strong><br/>La start up spécialisée sur la blockchain ETH</h2>
+                    <h2 style={{color:'white'}}><strong><span className='red'>ETERNALSTAR</span></strong><br/>Entrez dans le monde de la blockchain</h2>
                 </div>
             </section>
             
@@ -83,20 +83,20 @@ let tl = gsap.timeline();
             </section>
 
             <section className="info">
-                <div className="container">
+                {/* <div className="container">
                     <h2 data-aos="zoom-in-up">
                         Whitelist Mint{" "}
-                        <span className="red"> {/* <NativeBalance /> */} </span>
+                        <span className="red"> </span>
                     </h2>
                     <a href="#" data-aos="zoom-in-up">
                         <button className="btn">Go !</button>
                     </a>
-                </div>
+                </div> */}
                 <div className="container">
                     <h2 data-aos="zoom-in-up">
-                    NFT <span className="red">Minted</span>
+                    Smart contract <span className="red">créés</span>
                     <br />
-                    <span className="red">0</span>/8888
+                    <span className="red">+</span>80
                     </h2>
                 </div>
             </section>
@@ -182,11 +182,17 @@ let tl = gsap.timeline();
             <section className="info">
                 <div className="container">
                     <h2 data-aos='zoom-in-up'>
-                        Join <span className='red'>our Discord</span>
+                        Rejoignez <span className='red'>Nous</span>
                     </h2>
-                    <a href='#' data-aos='zoom-in-up'>
+                    {/* <a href='#' data-aos='zoom-in-up'>
                         <button className='btn'>Go !</button>
-                    </a>
+                    </a> */}
+                    <Anchor>
+                        <button className="btn AnchorHomeButton">
+                            <AnchorLink href="#contact" title="Go">
+                            </AnchorLink>
+                        </button>
+                    </Anchor>
                 </div>
             </section>
 

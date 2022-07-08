@@ -14,8 +14,8 @@ function App() {
           <div className='mainMenuAnchorGroup'>
             <img style={{ marginLeft:'20px', width:"30px"}} src="logoEternal.png"/>
             <Link href="#topHomePage" title="Acceuil" />
-            <Link href="#contact" title="Contact" />
-            <Link href="#nos_services" title="Nos services">
+            <Link href="#nos_services" title="Nos services"/>
+            <Link href="#contact" title="Contact" >
             </Link>
           </div>
         </Anchor>
