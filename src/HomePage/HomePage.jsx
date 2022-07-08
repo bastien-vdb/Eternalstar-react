@@ -155,15 +155,12 @@ let tl = gsap.timeline();
             <section className="hero">
                 <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroG">
                     <div>
+                        <br/><br/><br/>
                         <h1>
-                            <span className="red">Check your NFT minted</span>
+                            <span className="red">Nous contacter</span>
                         </h1>
-                        <p>
-                            Every NFT are on the Ethereum blockchain because we trust in it for security and the futur of this technology. As soon as you have minted an NFT from Moebius collection, you can find all your nft minted on Opensea but no only: You can see for art collection Here! Don't forget to connect your metamask.
-                        </p>
-                        <a href="#">
-                            <button className="btn">Access to the market place</button>
-                        </a>
+                            Une prise de contact simple. Décrivez-nous votre problème, et nous y répondrons :
+                            <About/>
                     </div>
                 </div>
                 <div data-aos="zoom-in-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroD_3"></div>
@@ -187,7 +184,6 @@ let tl = gsap.timeline();
                         <div className="bloc" data-aos="zoom-in">
                             <div className="number">1</div>
                             <h4>Launch Roadmap</h4>
-                            <About/>
                         </div>
                         <div className="bloc" data-aos="zoom-in">
                             <div className="number off">2</div>
