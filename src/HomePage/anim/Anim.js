@@ -5,9 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import background from "./img/background.jpg";
 import capsule from "./img/capsule.png";
 import star from "./img/star.png";
-import greyplanet from './img/greyplanet.png';
-import marplanet from './img/marplanet.png';
-
+import embrytransp from "./img/embrytransp.png";
 function Anim(props) {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -22,6 +20,11 @@ function Anim(props) {
       x: "-20vw",
     })
 
+    .to('.embrytransp', {
+      scale:8,
+      y: '-20vh'
+    },'<')
+
     .to(
       ".capsule",
       {
@@ -29,31 +32,6 @@ function Anim(props) {
       },
       "<",
     )
-
-    .to(".greyplanet",
-        {
-            x: "0vw",
-            y: "-60vh",
-            scale: 1.5,
-          },
-          "<",
-        )
-
-    .to(".marplanet", 
-    {
-        y:"10vh",
-        scale:1.5,
-    },
-    "<")
-
-    .to(
-      ".star",
-      {
-        scale: 2,
-        y: '100px',
-      },
-      "<",
-    );
 
   ScrollTrigger.create({
     animation: parallax,
@@ -70,10 +48,8 @@ function Anim(props) {
         <div className="contAnim">
         <section className="parallax">
           <img src={background} alt="background" className="background" />
-          <img src={star} alt="star" className="star" />
+          <img src={embrytransp} alt="embrytransp" className="embrytransp" />
           <img src={capsule} alt="capsule" className="capsule" />
-          <img src={greyplanet} alt="greyplanet" className='greyplanet'/>
-          <img src={marplanet} alt="marplanet" className='marplanet'/>
         </section>
 
       </div>

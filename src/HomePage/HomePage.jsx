@@ -1,45 +1,37 @@
-import './HomePageCSS.css';
-import {gsap} from 'gsap';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import {useEffect} from 'react';
-import {Link} from 'react-router-dom';
-import img10 from './img/eternalstar_img/nftsEt.png';
-import img11jpg from './img/eternalstar_img/metaverse_nft.jpg';
-import img12 from './img/eternalstar_img/service_commu_et.png';
-import BVDB from './img/team/BVDB.png';
-import ADFCH from './img/team/ADFCH.png';
-import JEWE from './img/team/JEWE.png';
-import RUSN from './img/team/RUSN.png';
-import ARFCH from './img/team/ARFCH.png';
-import ALVU from './img/team/ALVU.png';
-import ERSCH from './img/team/ERSCH.png';
-import About from './about/About.js';
-import Anim from './anim/Anim.js';
 import {Anchor} from 'antd';
 import 'antd/dist/antd.css';
+import './HomePageCSS.css';
+import {gsap} from 'gsap';
+//AOS place
+import {useEffect} from 'react';
+import About from './about/About.js';
+import Anim from './anim/Anim.js';
+import hero from './img/generation_bd.jpg';
+import hero2 from './img/life_bd.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function HomePage () {
 
-    const AnchorLink  = Anchor.Link;;
+    const AnchorLink  = Anchor.Link;
 
-useEffect(() => {
-    
-
+useEffect(() => {    
 let tl = gsap.timeline();
 
     tl.to('.loading', {
-        left: '100%',
-        duration: 2
+        opacity: '0',
+        duration: 8
     })
 
     tl.to('.loading', {
         display: 'none'})
 
-        AOS.init();
-    AOS.refresh();
-
 }, []);
+
+useEffect(()=>{
+    AOS.init();
+    AOS.refresh();
+})
 
     return (
         <div id='topHomePage'>
@@ -47,13 +39,14 @@ let tl = gsap.timeline();
             <Anim/>           
             <section className='heroHome'>
                 <div className='titleHome'>
-                    <h2 style={{color:'white'}}><strong><span className='red'>ETERNALSTAR</span></strong><br/>Entrez dans le monde de la blockchain</h2>
+                    <h1 className='eternal_title'>ETERNALSTAR</h1>
+                    <h4 className='eternal_title'>Entrez dans le monde de la blockchain</h4>
                 </div>
             </section>
             
             <section className="hero">
                 {/* <div className="logo">Comic Friends</div> */}
-                <div style={{fontFamily:"Roboto, sans-serif"}} className="socials">
+                {/* <div style={{fontFamily:"Roboto, sans-serif"}} className="socials">
                     <ul>
                         <li>
                             <a href="#" target="_blank">
@@ -66,47 +59,39 @@ let tl = gsap.timeline();
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="heroG">
                     <div style={{width:'100%'}}>
-                        <h1 style={{color:'white'}}>Devenez un acteur reconnu<span className="red"> dans le WEB3.0</span></h1>
+                        <h1 className='eternal_title'>Devenez un acteur reconnu dans le WEB3.0</h1>
                         <p>Tout savoir sur notre offre</p>   
                         <Anchor>
-                        <button className="btn AnchorHomeButton">
+                        <button className="btn">
                             <AnchorLink href="#nos_services" title="Offres">
                             </AnchorLink>
                         </button>
                         </Anchor>
                     </div>
                 </div>
-                <div className="heroD"></div>
+                <div className="heroD">
+                </div>
             </section>
 
             <section className="info">
-                {/* <div className="container">
-                    <h2 data-aos="zoom-in-up">
-                        Whitelist Mint{" "}
-                        <span className="red"> </span>
-                    </h2>
-                    <a href="#" data-aos="zoom-in-up">
-                        <button className="btn">Go !</button>
-                    </a>
-                </div> */}
                 <div className="container">
                     <h2 data-aos="zoom-in-up">
-                    Smart contract <span className="red">créés</span>
+                    Smart contract créés
                     <br />
-                    <span className="red">+</span>80
+                    + 80
                     </h2>
                 </div>
             </section>
 
             <section className="hero">
                 <div data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroD_2"></div>
-                    <div data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroG">
+                    <div data-aos="zoom-out-up" data-aos-offset="300" className="heroG">
                         <div>
                             <h1>
-                                <span className="red">Travailler avec nous</span>
+                                <span className='eternal_title'>Travailler avec nous</span>
                             </h1>
                             <p>
                             Besoin d'une équipe compétente et qualifiée pour vous accompagner dans la réalisation de votre projet ?
@@ -114,7 +99,7 @@ let tl = gsap.timeline();
                             Contactez-nous ! 
                             </p>
                             <Anchor>
-                                <button className="btn AnchorHomeButton">
+                                <button className="btn">
                                     <AnchorLink href="#contact" title="Go">
                                     </AnchorLink>
                                 </button>
@@ -127,7 +112,7 @@ let tl = gsap.timeline();
                 <div className="team" id="nos_services" >
                     <div className="container">
                     <h2 data-aos="zoom-in">
-                        Nos <span className="red">services</span>
+                        Nos services
                     </h2>
                     <div className="team__flex">
                         <div className="member" data-aos="zoom-in">
@@ -139,7 +124,7 @@ let tl = gsap.timeline();
                             de votre collection et la Dapp qui plaira à vos utilisateurs.
                             </span>
                         </h4>
-                        <img src={img10} alt="Image" />
+                        <img src={hero} alt="Création de collection NFT" />
                         </div>
                         <div className="member" data-aos="zoom-in">
                         <h4>
@@ -149,7 +134,7 @@ let tl = gsap.timeline();
                             EternalStar vous aide à réaliser votre obectif artistique.
                             </span>
                         </h4>
-                        <img src={img11jpg} alt="Imagejpg" />
+                        <img src={hero2} alt="Design dans le Metaverse" />
                         </div>
                         <div className="member" data-aos="zoom-in">
                         <h4>
@@ -159,7 +144,7 @@ let tl = gsap.timeline();
                             Une communauté se doit d'être active, et doit donc être animée. Notre connaissance du terrain saura votre plus fort atout.
                             </span>
                         </h4>
-                        <img src={img12} alt="Image" />
+                        <img src={hero} alt="Marketing et gestion de communauté" />
                         </div>
                     </div>
                     </div>
@@ -171,7 +156,7 @@ let tl = gsap.timeline();
                     <div>
                         <br/><br/><br/>
                         <h1>
-                            <span className="red">Nous contacter</span>
+                            <span className='eternal_title'>Nous contacter</span>
                         </h1>
                             Une prise de contact simple. Décrivez-nous votre problème, et nous y répondrons :
                             <About/>
@@ -179,30 +164,25 @@ let tl = gsap.timeline();
                 </div>
                 <div data-aos="zoom-in-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroD_3"></div>
             </section>
+
             <section className="info">
                 <div className="container">
                     <h2 data-aos='zoom-in-up'>
-                        Rejoignez <span className='red'>Nous</span>
+                        Une entreprise dynamique 
                     </h2>
-                    {/* <a href='#' data-aos='zoom-in-up'>
-                        <button className='btn'>Go !</button>
-                    </a> */}
-                    <Anchor>
-                        <button className="btn AnchorHomeButton">
-                            <AnchorLink href="#contact" title="Go">
-                            </AnchorLink>
-                        </button>
-                    </Anchor>
+                    <div style={{width:'50%', marginLeft:'25%'}}>
+                        <span style={{fontSize:'50px'}}>" </span>Nous vous accompagnons du début du projet jusqu'à la livraison finale. Nous adoptons une méthodologie paliée par des process précis, grâce à notre experience cumulée de plus de 10ans.<span style={{fontSize:'50px'}}> "</span>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <div className="roadmap">
                     <div className="container">
-                        <h2 data-aos="zoom-in">The <span className="red">Expertises</span></h2>
+                        <h2 data-aos="zoom-in">Expertises</h2>
                         <div className="line"></div>
                         <div className="bloc" data-aos="zoom-in">
-                            <div className="number off">2</div>
+                            <div className="number off">1</div>
                             <h3>NFT Arts</h3>
                             <p>Notre expertise vous permet de lancer votre projet dans un délai réduit, tout en vous assurant d'une qualité à la hauteur des plus grands projets de collections d'oeuvres d'art numériques.</p>
                         </div>
@@ -222,7 +202,7 @@ let tl = gsap.timeline();
                             <p>Besoin de conseils pour votre oeuvre ? Notre expertise artistique vous permettra de concrétiser votre objectif.</p>
                         </div>
                         <div className="bloc" data-aos="zoom-in">
-                            <div className="number off">4</div>
+                            <div className="number off">5</div>
                             <h3>Création d'une Communauté</h3>
                             <p>Votre projet manque de visibilité ? Nous vous accompagnons dans la création d'une communauté.
                                 Discord et Twitter sont les incontournables du moment, mais certains outils qui ne sont pas à négliger, font la différence.</p>
@@ -231,7 +211,7 @@ let tl = gsap.timeline();
                 </div>
             </section>
 
-            <section>
+            {/* <section>
                 <div className="team">
                     <div className="container">
                         <h2 data-aos="zoom-in">Notre <span className="red">équipe</span></h2>
@@ -272,7 +252,7 @@ let tl = gsap.timeline();
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <footer>
                 <div className="container">
                     <div className="footer__flex">

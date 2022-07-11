@@ -50,8 +50,17 @@ a .btn {
     display: none;
 }
 
-.red {
-    color: var(--color3);
+.ant-anchor-link {
+    padding: 0;
+}
+
+.ant-anchor-link-title {
+    text-overflow:unset;
+    overflow:unset;
+}
+
+.ant-anchor-link-title .ant-anchor-link-title-active {
+    color:orange;
 }
 
 .loading {
@@ -101,6 +110,10 @@ a .btn {
     align-items: center;
 }
 
+.eternal_title {
+    color: white;
+}
+
 .hero .heroD, .hero .heroG, .hero .heroD_2, .hero .heroD_3 {
     width: 50%;
     height: 100%;
@@ -110,7 +123,8 @@ a .btn {
 .hero .heroD {
     background-image: url('img/hero.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
+    background-position: center;
     /*modif eternalStar*/
     background-color: black;
 }
@@ -118,7 +132,8 @@ a .btn {
 .hero .heroD_2 {
     background-image: url('img/generation_bd.jpg');
     background-repeat: no-repeat;
-    background-size:75%;
+    background-size:contain;
+    background-position: left center;
     /*modif eternalStar*/
     background-color: black;
 }
@@ -126,7 +141,8 @@ a .btn {
 .hero .heroD_3 {
     background-image: url('img/life_bd.jpg');
     background-repeat: no-repeat;
-    background-size:75%;
+    background-size:contain;
+    background-position: right center;
     /*modif eternalStar*/
     background-color: black;
 }
@@ -226,11 +242,12 @@ a .btn {
 }
 
 .roadmap .bloc {
-    background: var(--color4);
+    background: black;
     margin-bottom: 3rem;
     padding: 1rem;
     position: relative;
     margin-left: 2px;
+    border: solid 1px var(--color4) ;
 }
 
 .roadmap h4 {
