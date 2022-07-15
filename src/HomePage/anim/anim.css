@@ -38,10 +38,11 @@
   }
 
   .embrytransp {
-    width: 5%;
     bottom: 0%;
-    left: 50%;
-    opacity: 0.5;
+    top:50%;  
+    left: 0%;
+    max-width: 100%;
+    transform: scale(0.5);
   }
   
   .capsule {

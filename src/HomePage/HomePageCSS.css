@@ -33,6 +33,7 @@ html {
     border: 0;
     padding: .5rem 1rem;
     background: var(--color3);
+    font-weight: bold;
     cursor: pointer;
     transition: all .5s;
 }
@@ -247,7 +248,7 @@ a .btn {
     padding: 1rem;
     position: relative;
     margin-left: 2px;
-    border: solid 1px var(--color4) ;
+    border: solid 1px white;
 }
 
 .roadmap h4 {

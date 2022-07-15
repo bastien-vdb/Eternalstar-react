@@ -6,10 +6,12 @@ import {gsap} from 'gsap';
 import {useEffect} from 'react';
 import About from './about/About.js';
 import Anim from './anim/Anim.js';
+import AnimMobile from './anim/AnimMobile';
 import hero from './img/generation_bd.jpg';
 import hero2 from './img/life_bd.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Media from 'react-media';
 
 function HomePage () {
 
@@ -36,7 +38,9 @@ useEffect(()=>{
     return (
         <div id='topHomePage'>
             <section className="loading"></section>
-            <Anim/>           
+            <Media query="(min-width:1000px)">
+                {(matches)=> matches ? (<Anim/>) : (<AnimMobile/>)}
+            </Media>        
             <section className='heroHome'>
                 <div className='titleHome'>
                     <h1 className='eternal_title'>ETERNALSTAR</h1>
@@ -45,21 +49,6 @@ useEffect(()=>{
             </section>
             
             <section className="hero">
-                {/* <div className="logo">Comic Friends</div> */}
-                {/* <div style={{fontFamily:"Roboto, sans-serif"}} className="socials">
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank">
-                                <i className="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div> */}
                 <div className="heroG">
                     <div style={{width:'100%'}}>
                         <h1 className='eternal_title'>Devenez un acteur reconnu dans le WEB3.0</h1>
@@ -154,11 +143,6 @@ useEffect(()=>{
             <section className="hero" id="contact">
                 <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroG">
                     <div>
-                        <br/><br/><br/>
-                        <h1>
-                            <span className='eternal_title'>Nous contacter</span>
-                        </h1>
-                            Une prise de contact simple. Décrivez-nous votre problème, et nous y répondrons :
                             <About/>
                     </div>
                 </div>

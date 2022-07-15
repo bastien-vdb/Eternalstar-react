@@ -22,14 +22,24 @@ const About = () => {
     return (
         <div className='contact'>
             <form ref={form} onSubmit={sendEmail}>
-                <label htmlFor='user_name'>Nom</label>
-                <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
-                <label htmlFor='user_email'>Email</label>
-                <input type="email" name="user_email" id="user_email" className='aboutInputField' />
-                <label htmlFor='user_phone'>Téléphone</label>
-                <input type="tel" name="user_phone" id="user_phone" className='aboutInputField' />
-                <label htmlFor='message'>Message</label>
-                <textarea name="message" id="message"/>
+            <h1 className='titleForm'>Nous contacter</h1>
+            <p>Une prise de contact simple. Décrivez-nous votre problème, et nous y répondrons :</p>
+                <div className='blocLabel'>
+                    <label htmlFor='user_name'>Nom</label>
+                    <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
+                </div>
+                <div className='blocLabel'>
+                    <label htmlFor='user_email'>Email</label>
+                    <input type="email" name="user_email" id="user_email" className='aboutInputField' />
+                </div>
+                <div className='blocLabel'>
+                    <label htmlFor='user_phone'>Téléphone</label>
+                    <input type="tel" name="user_phone" id="user_phone" className='aboutInputField' />
+                </div>
+                <div className='blocLabel'>
+                    <label htmlFor='message'>Message</label>
+                    <textarea name="message" id="message"/>
+                </div>
                 <input type="submit" value="Envoyer" className="aboutButton" />
             </form>
         </div>

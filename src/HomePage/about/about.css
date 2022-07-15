@@ -22,10 +22,16 @@
     max-width: 600px;
 }
 
+.blocLabel {
+    display: flex;
+    align-items: center;
+}
+
 .aboutButton {
     border: 0;
     background-color: #9fc5d4;
-    color: white;
+    color: black;
+    font-weight:bold;
     cursor: pointer;
     width: 30%;
     margin: 1rem;
@@ -35,4 +41,8 @@
 
 .aboutButton:hover {
     background-color: white;
+}
+
+.titleForm {
+    color:white;
 }

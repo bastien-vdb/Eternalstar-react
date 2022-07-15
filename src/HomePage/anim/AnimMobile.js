@@ -1,20 +1,17 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import './anim.css';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import './animMobile.css';
 import background from "./img/background.jpg";
 import capsule from "./img/capsule.png";
 import embrytransp from "./img/embrytransp.png";
-
-function Anim(props) {
+const AnimMobile = () => {
 
     gsap.registerPlugin(ScrollTrigger);
-
-  const parallax = gsap.timeline();
+    const parallax = gsap.timeline();
 
     useEffect(()=>{
-        //GSAP effect (begining of the page)
-    parallax
+        parallax
     .to(".background", {
       scale: 1,
       x: "-20vw",
@@ -41,18 +38,18 @@ function Anim(props) {
     scrub: 3,
     pin: true,
   });
-  
-    },[])
+    })
 
     return (
         <div className="contAnim">
-        <section className="parallax">
-          <img src={background} alt="background" className="background" />
-          <img src={embrytransp} alt="embrytransp" className="embrytransp" />
-          <img src={capsule} alt="capsule" className="capsule" />
-        </section>
-      </div>
+            Hello Bali
+            <section className="parallax">
+                <img src={background} alt="background" className="background" />
+                <img src={embrytransp} alt="embrytransp" className="embrytransp" />
+                <img src={capsule} alt="capsule" className="capsule" />
+            </section>
+        </div>
     );
-}
+};
 
-export default Anim;
+export default AnimMobile;
