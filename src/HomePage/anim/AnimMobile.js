@@ -42,7 +42,6 @@ const AnimMobile = () => {
 
     return (
         <div className="contAnim">
-            Hello Bali
             <section className="parallax">
                 <img src={background} alt="background" className="background" />
                 <img src={embrytransp} alt="embrytransp" className="embrytransp" />

@@ -1,4 +1,6 @@
 import {Anchor} from 'antd';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'antd/dist/antd.css';
 import './HomePageCSS.css';
 import {gsap} from 'gsap';
@@ -9,8 +11,6 @@ import Anim from './anim/Anim.js';
 import AnimMobile from './anim/AnimMobile';
 import hero from './img/generation_bd.jpg';
 import hero2 from './img/life_bd.jpg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Media from 'react-media';
 
 function HomePage () {
@@ -21,8 +21,8 @@ useEffect(() => {
 let tl = gsap.timeline();
 
     tl.to('.loading', {
-        opacity: '0',
-        duration: 8
+        bottom: '0%',
+        duration: 10
     })
 
     tl.to('.loading', {
@@ -33,7 +33,7 @@ let tl = gsap.timeline();
 useEffect(()=>{
     AOS.init();
     AOS.refresh();
-})
+},[])
 
     return (
         <div id='topHomePage'>
@@ -66,8 +66,8 @@ useEffect(()=>{
             </section>
 
             <section className="info">
-                <div className="container">
-                    <h2 data-aos="zoom-in-up">
+                <div data-aos="zoom-in-out" className="container">
+                    <h2>
                     Smart contract créés
                     <br />
                     + 80
@@ -76,8 +76,8 @@ useEffect(()=>{
             </section>
 
             <section className="hero">
-                <div data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroD_2"></div>
-                    <div data-aos="zoom-out-up" data-aos-offset="300" className="heroG">
+                <div className="heroD_2"></div>
+                    <div className="heroG">
                         <div>
                             <h1>
                                 <span className='eternal_title'>Travailler avec nous</span>
@@ -100,11 +100,11 @@ useEffect(()=>{
             <section>
                 <div className="team" id="nos_services" >
                     <div className="container">
-                    <h2 data-aos="zoom-in">
+                    <h2>
                         Nos services
                     </h2>
                     <div className="team__flex">
-                        <div className="member" data-aos="zoom-in">
+                        <div className="member">
                         <h4>
                             Création d'une collection NFT <br/>
                             <span className="job">   
@@ -115,7 +115,7 @@ useEffect(()=>{
                         </h4>
                         <img src={hero} alt="Création de collection NFT" />
                         </div>
-                        <div className="member" data-aos="zoom-in">
+                        <div className="member">
                         <h4>
                             Design dans le metavers <br/>
                             <span className="job">
@@ -125,7 +125,7 @@ useEffect(()=>{
                         </h4>
                         <img src={hero2} alt="Design dans le Metaverse" />
                         </div>
-                        <div className="member" data-aos="zoom-in">
+                        <div className="member">
                         <h4>
                             Marketing et gestion de communauté <br/>
                             <span className="job">
@@ -141,17 +141,17 @@ useEffect(()=>{
             </section>
 
             <section className="hero" id="contact">
-                <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroG">
+                <div className="heroG">
                     <div>
                             <About/>
                     </div>
                 </div>
-                <div data-aos="zoom-in-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="heroD_3"></div>
+                <div className="heroD_3"></div>
             </section>
 
             <section className="info">
                 <div className="container">
-                    <h2 data-aos='zoom-in-up'>
+                    <h2>
                         Une entreprise dynamique 
                     </h2>
                     <div style={{width:'50%', marginLeft:'25%'}}>
@@ -163,29 +163,29 @@ useEffect(()=>{
             <section>
                 <div className="roadmap">
                     <div className="container">
-                        <h2 data-aos="zoom-in">Expertises</h2>
+                        <h2>Expertises</h2>
                         <div className="line"></div>
-                        <div className="bloc" data-aos="zoom-in">
+                        <div className="bloc">
                             <div className="number off">1</div>
                             <h3>NFT Arts</h3>
                             <p>Notre expertise vous permet de lancer votre projet dans un délai réduit, tout en vous assurant d'une qualité à la hauteur des plus grands projets de collections d'oeuvres d'art numériques.</p>
                         </div>
-                        <div className="bloc" data-aos="zoom-in">
+                        <div className="bloc">
                             <div className="number off">2</div>
                             <h3>NFT Game</h3>
                             <p>Vous souhaitez créer un jeu sur le Web3.0 ? Nous vous accompagnons sur la spécification des besoins. Nous nous occupons de la programmation.</p>
                         </div>
-                        <div className="bloc" data-aos="zoom-in">
+                        <div className="bloc">
                             <div className="number off">3</div>
                             <h3>Dapp DEFI</h3>
                             <p>Un projet sur la finance décentralisée ? Nous vous aidons à lancer votre application tout en respectant les normes juridiques.</p>
                         </div>
-                        <div className="bloc" data-aos="zoom-in">
+                        <div className="bloc">
                             <div className="number off">4</div>
                             <h3>Direction Artistique</h3>
                             <p>Besoin de conseils pour votre oeuvre ? Notre expertise artistique vous permettra de concrétiser votre objectif.</p>
                         </div>
-                        <div className="bloc" data-aos="zoom-in">
+                        <div className="bloc">
                             <div className="number off">5</div>
                             <h3>Création d'une Communauté</h3>
                             <p>Votre projet manque de visibilité ? Nous vous accompagnons dans la création d'une communauté.
@@ -194,49 +194,6 @@ useEffect(()=>{
                     </div>
                 </div>
             </section>
-
-            {/* <section>
-                <div className="team">
-                    <div className="container">
-                        <h2 data-aos="zoom-in">Notre <span className="red">équipe</span></h2>
-                        <div className="team__flex">
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Arthur Fuchs <br/><span className="job">DG</span></h4>
-                                <img src={ARFCH} alt="Arthur Fuchs" />
-                            </div>
-                            
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Adrien Fuchs <br/><span className="job">DG</span></h4>
-                                <img src={ADFCH} alt="Adrien Fuchs" />
-                            </div>
-                            
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Ruben Sananes <br/><span className="job">CEO Player one labs</span></h4>
-                                <img src={RUSN} alt="Ruben Sananes" />
-                            </div>
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Alex Vuillaume <br/><span className="job">COO Player one labs</span></h4>
-                                <img src={ALVU} alt="Alex Vuillaume" />
-                            </div>
-                        </div>
-                        <div className="team__flex niveau2">
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Éric Schahl <br/><span className="job">Avocat</span></h4>
-                                <img src={ERSCH} alt="Éric Schahl" />
-                            </div>
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Jennifer Westjohn <br/><span className="job">DA</span></h4>
-                                <img src={JEWE} alt="Jennifer Westjohn" />
-                            </div>
-                            <div className="member service" data-aos="zoom-in">
-                                <h4>Bastien Vermot de boisrolin<br/><span className="job">Web3 Developper</span></h4>
-                                <img src={BVDB} alt="Bastien Vermot de boisrolin" />
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section> */}
             <footer>
                 <div className="container">
                     <div className="footer__flex">
