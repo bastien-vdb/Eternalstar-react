@@ -1,38 +1,39 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import backgroundMobile from "./img/background.jpg";
+import capsuleMobile from "./img/capsule.png";
+import embrytranspMobile from "./img/embrytransp.png";
 import './animMobile.css';
-import background from "./img/background.jpg";
-import capsule from "./img/capsule.png";
-import embrytransp from "./img/embrytransp.png";
+
 const AnimMobile = () => {
 
     gsap.registerPlugin(ScrollTrigger);
-    const parallax = gsap.timeline();
+    const parallaxMobile = gsap.timeline();
 
     useEffect(()=>{
-        parallax
+        parallaxMobile
     .to(".background", {
       scale: 1,
       x: "-20vw",
     })
 
-    .to('.embrytransp', {
-      scale:1,
-      y: '-25vh'
+    .to('.embrytranspMobile', {
+      scale:1.6,
+      y: '-15vh'
     },'<')
 
     .to(
-      ".capsule",
+      ".capsuleMobile",
       {
-        scale: 5,
+        scale: 1.8,
       },
       "<",
     )
 
   ScrollTrigger.create({
-    animation: parallax,
-    trigger: ".parallax",
+    animation: parallaxMobile,
+    trigger: ".parallaxMobile",
     start: "top 0",
     end: "bottom 0%",
     scrub: 3,
@@ -41,11 +42,11 @@ const AnimMobile = () => {
     })
 
     return (
-        <div className="contAnim">
-            <section className="parallax">
-                <img src={background} alt="background" className="background" />
-                <img src={embrytransp} alt="embrytransp" className="embrytransp" />
-                <img src={capsule} alt="capsule" className="capsule" />
+        <div className="contAnimMobile">
+            <section className="parallaxMobile">
+                <img src={backgroundMobile} alt="backgroundMobile" className="backgroundMobile" />
+                <img src={embrytranspMobile} alt="embrytranspMobile" className="embrytranspMobile" />
+                <img src={capsuleMobile} alt="capsuleMobile" className="capsuleMobile" />
             </section>
         </div>
     );

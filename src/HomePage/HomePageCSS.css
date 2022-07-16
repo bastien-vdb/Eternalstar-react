@@ -74,6 +74,12 @@ a .btn {
     z-index: 5;
 }
 
+.loadingCounter {
+    position: absolute;
+    left:45%;
+    top:40%;
+}
+
 /* Accueil */
 
 .heroHome {

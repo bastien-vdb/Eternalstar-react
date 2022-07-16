@@ -5,13 +5,14 @@ import 'antd/dist/antd.css';
 import './HomePageCSS.css';
 import {gsap} from 'gsap';
 //AOS place
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import About from './about/About.js';
 import Anim from './anim/Anim.js';
 import AnimMobile from './anim/AnimMobile';
 import hero from './img/generation_bd.jpg';
 import hero2 from './img/life_bd.jpg';
 import Media from 'react-media';
+import ReactLoading from "react-loading";
 
 function HomePage () {
 
@@ -20,13 +21,12 @@ function HomePage () {
 useEffect(() => {    
 let tl = gsap.timeline();
 
-    tl.to('.loading', {
-        bottom: '0%',
-        duration: 10
-    })
+    // tl.to('.loading', {
+    //     duration: 5
+    // })
 
-    tl.to('.loading', {
-        display: 'none'})
+    // tl.to('.loading', {
+    //     display: 'none'})
 
 }, []);
 
@@ -37,7 +37,7 @@ useEffect(()=>{
 
     return (
         <div id='topHomePage'>
-            <section className="loading"></section>
+            {/* <section className="loading"></section> */}
             <Media query="(min-width:1000px)">
                 {(matches)=> matches ? (<Anim/>) : (<AnimMobile/>)}
             </Media>        
