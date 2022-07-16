@@ -1,3 +1,9 @@
+/*ANTD*/
+
+.ant-anchor-link > .ant-anchor-link-title:hover {
+  color:white;
+}
+
 .App {
   text-align: center;
 }
@@ -66,7 +72,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #82ccf7;
 }
 
 @keyframes App-logo-spin {

@@ -31,12 +31,12 @@
     border: 0;
     background-color: #9fc5d4;
     color: black;
-    font-weight:bold;
     cursor: pointer;
     width: 30%;
     margin: 1rem;
     padding: 0.5rem;
     transition: 1.5s ease;
+    font-weight: 600;
 }
 
 .aboutButton:hover {

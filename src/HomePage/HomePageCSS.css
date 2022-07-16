@@ -281,7 +281,7 @@ a .btn {
 
 .roadmap .number.off {
     background: var(--color2);
-    color: var(--color3);
+    color: #000000;
 }
 
 .roadmap .container {
@@ -382,9 +382,27 @@ footer {
 }
 
 /* Responsive */
+
+@media (orientation: landscape) and (max-width: 767px) {
+    .heroContact {
+        height: 150vh;
+    }
+}
+
 @media all and (max-width: 767px) {
     .hero .heroD, .hero .heroD_2, .hero .heroD_3 {
-        display: none;
+        /*display: none;*/
+    }
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .heroD_2 {
+        background-size:cover;
+    }
+
+    .hero .heroD_3 {
+        background-size:cover;
     }
 
     .hero .heroD, .hero .heroG, .hero .heroD_2, .hero .heroD_3 {

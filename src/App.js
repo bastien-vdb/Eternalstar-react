@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
 import HomePage from './HomePage/HomePage.jsx';
 import {Anchor} from 'antd';
 import 'antd/dist/antd.css';
+import './App.css';
 
 const { Link } = Anchor;
 

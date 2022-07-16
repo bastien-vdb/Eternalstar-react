@@ -79,20 +79,24 @@ useEffect(()=>{
                 <div className="heroD_2"></div>
                     <div className="heroG">
                         <div>
+                            
+                            <p>
                             <h1>
                                 <span className='eternal_title'>Travailler avec nous</span>
                             </h1>
-                            <p>
                             Besoin d'une équipe compétente et qualifiée pour vous accompagner dans la réalisation de votre projet ?
                             Vous avez frappé à la bonne porte. Notre travaille consiste à comprendre vos objectifs et à trouver la solution adaptée à vos besoins.
-                            Contactez-nous ! 
+                            Contactez-nous !
+                            <div style={{marginLeft:'30%', marginTop:'10%'}}>
+                                <Anchor>
+                                    <button className="btn">
+                                        <AnchorLink href="#contact" title="Go">
+                                        </AnchorLink>
+                                    </button>
+                                </Anchor>
+                            </div>
                             </p>
-                            <Anchor>
-                                <button className="btn">
-                                    <AnchorLink href="#contact" title="Go">
-                                    </AnchorLink>
-                                </button>
-                            </Anchor>
+                            
                         </div>
                 </div>
             </section>
@@ -140,7 +144,7 @@ useEffect(()=>{
                 </div>
             </section>
 
-            <section className="hero" id="contact">
+            <section className="hero heroContact" id="contact">
                 <div className="heroG">
                     <div>
                             <About/>

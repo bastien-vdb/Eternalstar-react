@@ -22,8 +22,8 @@ const About = () => {
     return (
         <div className='contact'>
             <form ref={form} onSubmit={sendEmail}>
-            <h1 className='titleForm'>Nous contacter</h1>
-            <p>Une prise de contact simple. Décrivez-nous votre problème, et nous y répondrons :</p>
+            <h1 className='titleForm'>Contact</h1>
+            <p>Décrivez-nous votre problème, et nous y répondrons :</p>
                 <div className='blocLabel'>
                     <label htmlFor='user_name'>Nom</label>
                     <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
