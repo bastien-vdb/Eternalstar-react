@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import backgroundMobile from "./img/background.jpg";
+import backgroundMobile from "./img/background.png";
 import capsuleMobile from "./img/capsule.png";
 import embrytranspMobile from "./img/embrytransp.png";
 import './animMobile.css';

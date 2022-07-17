@@ -128,7 +128,7 @@ a .btn {
 }
 
 .hero .heroD {
-    background-image: url('img/hero.jpg');
+    background-image: url('img/hero.png');
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
@@ -137,7 +137,7 @@ a .btn {
 }
 
 .hero .heroD_2 {
-    background-image: url('img/generation_bd.jpg');
+    background-image: url('img/generation_bd.png');
     background-repeat: no-repeat;
     background-size:contain;
     background-position: left center;
@@ -146,7 +146,7 @@ a .btn {
 }
 
 .hero .heroD_3 {
-    background-image: url('img/life_bd.jpg');
+    background-image: url('img/life_bd.png');
     background-repeat: no-repeat;
     background-size:contain;
     background-position: right center;
@@ -385,7 +385,7 @@ footer {
 
 @media (orientation: landscape) and (max-width: 767px) {
     .heroContact {
-        height: 150vh;
+        height: 200vh;
     }
 }
 

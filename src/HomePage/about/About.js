@@ -19,9 +19,13 @@ const About = () => {
         })
     }
 
+    const pushEnter = (e) => {
+        if (e.key === 'Enter' && sendEmail());
+    }
+
     return (
         <div className='contact'>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} onKeyDown={pushEnter}>
             <h1 className='titleForm'>Contact</h1>
             <p>Décrivez-nous votre problème, et nous y répondrons :</p>
                 <div className='blocLabel'>

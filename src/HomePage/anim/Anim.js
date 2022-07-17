@@ -1,16 +1,15 @@
 import React, {useEffect} from 'react';
 import {gsap} from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './anim.css';
-import background from "./img/background.jpg";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import background from "./img/background.png";
 import capsule from "./img/capsule.png";
 import embrytransp from "./img/embrytransp.png";
-
 function Anim(props) {
 
     gsap.registerPlugin(ScrollTrigger);
 
-  const parallax = gsap.timeline();
+    const parallax = gsap.timeline();
 
     useEffect(()=>{
         //GSAP effect (begining of the page)
