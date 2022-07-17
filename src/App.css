@@ -1,5 +1,9 @@
 /*ANTD*/
 
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: white;
+}
+
 .ant-anchor-link > .ant-anchor-link-title:hover {
   color:white;
 }

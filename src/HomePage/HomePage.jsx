@@ -14,12 +14,15 @@ import offers from "./Offers/offers.json";
 function HomePage () {
 
     const AnchorLink  = Anchor.Link;
+     const beginingTimeLine = gsap.timeline();
 
     useEffect(()=>{
+
         gsap.fromTo(".eternal_title",{x: -500}, {
             scrollTrigger: ".eternal_title", // start the animation when ".box" enters the viewport (once)
             x: 0
         });
+        
         gsap.fromTo(".eternal_title2",{x: -500}, {
             scrollTrigger: ".eternal_title2", // start the animation when ".box" enters the viewport (once)
             x: 0
@@ -96,7 +99,6 @@ function HomePage () {
       
     return (
         <div id='topHomePage'>
-            {/* <section className="loading"></section> */}
             <Media query="(min-width:1000px)">
                 {(matches)=> matches ? (<Anim/>) : (<AnimMobile/>)}
             </Media>        
@@ -168,30 +170,24 @@ function HomePage () {
                     </h2>
                     <div className="team__flex">
                         <div className="member">
-                        <h4>
-                        Technique: <br/>
-                        </h4>
+                        <h4>Technique</h4>
                         <ul className="job">  
                                 {technique.map((e,i)=><li key={i}>{e}</li>)}
-                            </ul>
+                        </ul>
                         <img src={hero} alt="Création de collection NFT" />
                         </div>
                         <div className="member">
-                        <h4>
-                            Artistique <br/>
-                            <span className="job">
+                        <h4>Artistique</h4>
+                        <ul className="job">
                                 {artistique.map((e,i)=><li key={i}>{e}</li>)}
-                            </span>
-                        </h4>
+                        </ul>
                         <img src={hero2} alt="Design dans le Metaverse" />
                         </div>
                         <div className="member">
-                        <h4>
-                            Marketing<br/>
-                            <span className="job">
+                        <h4>Marketing</h4>
+                        <ul className="job">
                                 {marketing.map((e,i)=><li key={i}>{e}</li>)}
-                            </span>
-                        </h4>
+                        </ul>
                         <img src={hero} alt="Marketing et gestion de communauté" />
                         </div>
                     </div>
