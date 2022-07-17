@@ -25,6 +25,7 @@ const About = () => {
 
     return (
         <div className='contact'>
+            <div className='landScapeMessageAlertForm'><h1>Pour utiliser le formulaire de contact, merci de mettre le téléphone en position "Portrait"</h1></div>
             <form ref={form} onSubmit={sendEmail} onKeyDown={pushEnter}>
             <h1 className='titleForm'>Contact</h1>
             <p>Décrivez-nous votre problème, et nous y répondrons :</p>

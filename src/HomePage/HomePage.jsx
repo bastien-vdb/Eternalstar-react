@@ -105,10 +105,9 @@ function HomePage () {
             <section className='heroHome'>
                 <div className='titleHome'>
                     <h1 className='eternal_title'>ETERNALSTAR</h1>
-                    <h4 className='eternal_title'>Entrez dans le monde de la blockchain</h4>
+                    <span className='eternal_title'>Entrez dans le monde de la blockchain</span>
                 </div>
             </section>
-            
             <section className="hero">
                 <div className="heroG">
                     <div style={{width:'100%'}}>
@@ -211,7 +210,7 @@ function HomePage () {
                             Une entreprise dynamique 
                         </h2>
                         <div style={{width:'50%', marginLeft:'25%'}}>
-                            <span style={{fontSize:'50px'}}>" </span>Nous vous accompagnons du début du projet jusqu'à la livraison finale. Nous adoptons une méthodologie paliée par des process précis, grâce à notre experience cumulée de plus de 10ans.<span style={{fontSize:'50px'}}> "</span>
+                            <span style={{fontSize:'50px'}}>" </span>Nous vous accompagnons du début du projet jusqu'à la livraison finale. Nous adoptons une méthodologie paliée par des process précis, grâce à notre experience cumulée de plus de 10 ans.<span style={{fontSize:'50px'}}> "</span>
                         </div>
                     </div>
                 </div>
