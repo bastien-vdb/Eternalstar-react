@@ -20,8 +20,8 @@ function Anim(props) {
     })
 
     .to('.embrytransp', {
-      scale:1,
-      y: '-25vh'
+      scale:0.5,
+      y: '-65vh'
     },'<')
 
     .to(
