@@ -9,10 +9,11 @@ import AnimMobile from './anim/AnimMobile';
 import hero from './img/generation_bd.png';
 import hero2 from './img/life_bd.png';
 import Media from 'react-media';
-import offers from "./Offers/offers.json";
+import { Button, Modal } from 'antd';
 
 function HomePage () {
 
+    const [isModalVisible, setModalVisible] = useState(false);
     const AnchorLink  = Anchor.Link;
      const beginingTimeLine = gsap.timeline();
 
@@ -139,8 +140,6 @@ function HomePage () {
                 <div className="heroD_2"></div>
                     <div className="heroG">
                         <div>
-                            
-                            <p>
                             <h1 className='eternal_title'>
                                 Travailler avec nous
                             </h1>
@@ -154,9 +153,7 @@ function HomePage () {
                                         </AnchorLink>
                                     </button>
                                 </Anchor>
-                            </div>
-                            </p>
-                            
+                            </div>                            
                         </div>
                 </div>
             </section>
@@ -258,7 +255,12 @@ function HomePage () {
                         </div>
                         <div className="footerD">
                             <ul>
-                                <li><a href="#">Developement</a></li>
+                                <li>
+                                    <button style={{background:'none', border:'none', cursor:'pointer'}} onClick={()=>setModalVisible(true)}>Développement</button>
+                                    <Modal type title="Development by" onCancel={()=>setModalVisible(false)} onOk={()=>setModalVisible(false)} visible={isModalVisible}>
+                                        <p>Bastien Vermot de boisrolin</p>
+                                    </Modal>
+                                </li>
                                 <li><a href="#">Mentions légales</a></li>
                             </ul>
                         </div>
