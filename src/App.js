@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import HomePage from './HomePage/HomePage.jsx';
 import {Anchor} from 'antd';
 import 'antd/dist/antd.css';

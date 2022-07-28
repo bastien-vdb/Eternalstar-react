@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './about.css';
 
@@ -25,25 +25,24 @@ const About = () => {
 
     return (
         <div className='contact'>
-            <div className='landScapeMessageAlertForm'><h1>Pour utiliser le formulaire de contact, merci de mettre le téléphone en position "Portrait"</h1></div>
             <form ref={form} onSubmit={sendEmail} onKeyDown={pushEnter}>
             <h1 className='titleForm'>Contact</h1>
             <p>Décrivez-nous votre problème, et nous y répondrons :</p>
                 <div className='blocLabel'>
-                    <label htmlFor='user_name'>Nom</label>
                     <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
+                    <label htmlFor='user_name'>Nom</label>
                 </div>
                 <div className='blocLabel'>
-                    <label htmlFor='user_email'>Email</label>
                     <input type="email" name="user_email" id="user_email" className='aboutInputField' />
+                    <label htmlFor='user_email'>Email</label>
                 </div>
                 <div className='blocLabel'>
-                    <label htmlFor='user_phone'>Téléphone</label>
                     <input type="tel" name="user_phone" id="user_phone" className='aboutInputField' />
+                    <label htmlFor='user_phone'>Téléphone</label>
                 </div>
                 <div className='blocLabel'>
-                    <label htmlFor='message'>Message</label>
                     <textarea name="message" id="message"/>
+                    <label htmlFor='message'>Message</label>
                 </div>
                 <input type="submit" value="Envoyer" className="aboutButton" />
             </form>

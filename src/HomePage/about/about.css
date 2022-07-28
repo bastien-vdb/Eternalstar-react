@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+    padding: 1em;
+    margin: 2em;
 }
 
 .aboutInputField{
@@ -18,8 +20,8 @@
     border-radius: 30px;
     padding: 1rem;
     margin: 0.5rem;
-    max-height: 200px;
-    max-width: 600px;
+    max-height: 50em;
+    max-width: 60em;
 }
 
 .blocLabel {
@@ -37,6 +39,7 @@
     padding: 0.5rem;
     transition: 1.5s ease;
     font-weight: 600;
+    transition: all 2s;
 }
 
 .aboutButton:hover {
@@ -45,24 +48,4 @@
 
 .titleForm {
     color:white;
-}
-
-.landScapeMessageAlertForm {
-    display: none;
-}
-
-.landScapeMessageAlertForm h1 {
-    color: red;
-    font-size: 50%;
-    font-weight: lighter;
-}
-
-@media (max-height: 400px) {
-    .contact form {
-        display: none;
-    }
-    .landScapeMessageAlertForm {
-        display: block;
-    }
-
 }

@@ -135,25 +135,26 @@ function HomePage () {
                 </div>
             </section>
 
-            <section className="hero">
-                <div className="heroD_2"></div>
-                    <div className="heroG">
-                        <div>
-                            <h1 className='eternal_title'>
-                                Travailler avec nous
-                            </h1>
-                            Besoin d'une équipe compétente et qualifiée pour vous accompagner dans la réalisation de votre projet ?
-                            Vous avez frappé à la bonne porte. Notre travaille consiste à comprendre vos objectifs et à trouver la solution adaptée à vos besoins.
-                            Contactez-nous !
-                            <div style={{marginLeft:'30%', marginTop:'10%'}}>
-                                <Anchor>
-                                    <button className="btn">
-                                        <AnchorLink href="#contact" title="Go">
-                                        </AnchorLink>
-                                    </button>
-                                </Anchor>
-                            </div>                            
-                        </div>
+            <section className="hero_travaillez_avec_nous">
+                <div className="heroD_2">
+                </div>
+                <div className="heroD">
+                    <div>
+                        <h1 className='eternal_title'>
+                            Travailler avec nous
+                        </h1>
+                        Besoin d'une équipe compétente et qualifiée pour vous accompagner dans la réalisation de votre projet ?
+                        Vous avez frappé à la bonne porte. Notre travaille consiste à comprendre vos objectifs et à trouver la solution adaptée à vos besoins.
+                        Contactez-nous !
+                        <div style={{marginLeft:'30%', marginTop:'10%'}}>
+                            <Anchor>
+                                <button className="btn">
+                                    <AnchorLink href="#contact" title="Go">
+                                    </AnchorLink>
+                                </button>
+                            </Anchor>
+                        </div>                            
+                    </div>
                 </div>
             </section>
 
@@ -190,8 +191,8 @@ function HomePage () {
                 </div>
             </section>
 
-            <section className="hero heroContact" id="contact">
-                <div className="heroG">
+            <section className="heroContact" id="contact">
+                <div className="heroContactG">
                     <div>
                             <About/>
                     </div>
@@ -217,16 +218,16 @@ function HomePage () {
                     <div className="container">
                         <h2>Expertises</h2>
                         <div className="line"></div>
-                        <div className="bloc bloc1">
-                            <div className="number off">1</div>
-                            <h3>NFT Arts</h3>
-                            <p>Notre expertise vous permet de lancer votre projet dans un délai réduit, tout en vous assurant d'une qualité à la hauteur des plus grands projets de collections d'oeuvres d'art numériques.</p>
-                        </div>
-                        <div className="bloc bloc2">
-                            <div className="number off">2</div>
-                            <h3>NFT Game</h3>
-                            <p>Vous souhaitez créer un jeu sur le Web3.0 ? Nous vous accompagnons sur la spécification des besoins. Nous nous occupons de la programmation.</p>
-                        </div>
+                            <div className="bloc bloc1">
+                                <div className="number off">1</div>
+                                <h3>NFT Arts</h3>
+                                <p>Notre expertise vous permet de lancer votre projet dans un délai réduit, tout en vous assurant d'une qualité à la hauteur des plus grands projets de collections d'oeuvres d'art numériques.</p>
+                            </div>
+                            <div className="bloc bloc2">
+                                <div className="number off">2</div>
+                                <h3>NFT Game</h3>
+                                <p>Vous souhaitez créer un jeu sur le Web3.0 ? Nous vous accompagnons sur la spécification des besoins. Nous nous occupons de la programmation.</p>
+                            </div>
                         <div className="bloc bloc3">
                             <div className="number off">3</div>
                             <h3>Dapp DEFI</h3>
