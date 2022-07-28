@@ -9,13 +9,12 @@ import AnimMobile from './anim/AnimMobile';
 import hero from './img/generation_bd.png';
 import hero2 from './img/life_bd.png';
 import Media from 'react-media';
-import { Button, Modal } from 'antd';
+import { Modal } from 'antd';
 
 function HomePage () {
 
     const [isModalVisible, setModalVisible] = useState(false);
     const AnchorLink  = Anchor.Link;
-     const beginingTimeLine = gsap.timeline();
 
     useEffect(()=>{
 
@@ -261,7 +260,7 @@ function HomePage () {
                                         <p>Bastien Vermot de boisrolin</p>
                                     </Modal>
                                 </li>
-                                <li><a href="#">Mentions légales</a></li>
+                                <li><a href="www.eternastar.io">Mentions légales</a></li>
                             </ul>
                         </div>
                     </div>

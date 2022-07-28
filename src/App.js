@@ -12,7 +12,7 @@ function App() {
       <div className='mainMenuDiv'>
         <Anchor>
           <div className='mainMenuAnchorGroup'>
-            <img style={{ marginLeft:'20px', width:"30px"}} src="logoEternal.png"/>
+            <img style={{ marginLeft:'20px', width:"30px"}} alt="logo EternalStar" src="logoEternal.png"/>
             <Link href="#topHomePage" title="-  Acceuil  " />
             <Link href="#nos_services" title="-  Nos services  "/>
             <Link href="#contact" title="-  Contact  " >
