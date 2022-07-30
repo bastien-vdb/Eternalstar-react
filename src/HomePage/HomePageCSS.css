@@ -81,6 +81,17 @@ a .btn {
     background-color: black;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroHome h1 {
+    font-size:2.8em;
+    color:white;
+}
+
+.heroHome span {
+    font-size:1.5em;
 }
 
 .titleHome {
@@ -99,6 +110,7 @@ a .btn {
 
 .eternal_title {
     color: white;
+    font-size: xx-large;
 }
 
 .hero .heroD, .hero .heroG {

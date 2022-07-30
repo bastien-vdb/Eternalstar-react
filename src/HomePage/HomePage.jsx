@@ -103,10 +103,8 @@ function HomePage () {
                 {(matches)=> matches ? (<Anim/>) : (<AnimMobile/>)}
             </Media>        
             <section className='heroHome'>
-                <div className='titleHome'>
-                    <h1 className='eternal_title'>ETERNALSTAR</h1>
-                    <span className='eternal_title'>Entrez dans le monde de la blockchain</span>
-                </div>
+                    <h1>ETERNALSTAR</h1>
+                    <span style={{color:'white'}}>Entrez dans le monde de la blockchain</span>
             </section>
             <section className="hero">
                 <div className="heroG">
@@ -216,7 +214,7 @@ function HomePage () {
             <section>
                 <div className="roadmap">
                     <div className="container">
-                        <h2>Expertises</h2>
+                        <h1 className='eternal_title'>Expertises</h1>
                         <div className="line"></div>
                             <div className="bloc bloc1">
                                 <div className="number off">1</div>

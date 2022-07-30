@@ -26,7 +26,7 @@ const About = () => {
     return (
         <div className='contact'>
             <form ref={form} onSubmit={sendEmail} onKeyDown={pushEnter}>
-            <h1 className='titleForm'>Contact</h1>
+            <h1 className='eternal_title'>Contact</h1>
             <p>Décrivez-nous votre problème, et nous y répondrons :</p>
                 <div className='blocLabel'>
                     <input type="text" name="user_name" id="user_name" className='aboutInputField'/>
