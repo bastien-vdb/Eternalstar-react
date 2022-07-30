@@ -8,7 +8,22 @@ const { Link } = Anchor;
 function App() {
   return (
     <div className="App">
-      <div className='mainMenuDiv'>
+      <nav className='navMenu'>
+        <ul>
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#nos_services">Nos services</a></li>
+          <li><a href="#contact">Nous contacter</a></li>
+        </ul>
+      </nav>
+      <HomePage/>
+    </div>
+  );
+}
+
+export default App;
+
+
+/* <div className='mainMenuDiv'>
         <Anchor>
           <div className='mainMenuAnchorGroup'>
             <img style={{ marginLeft:'20px', width:"30px"}} alt="logo EternalStar" src="logoEternal.png"/>
@@ -18,10 +33,4 @@ function App() {
             </Link>
           </div>
         </Anchor>
-      </div>
-      <HomePage/>
-    </div>
-  );
-}
-
-export default App;
+      </div> */

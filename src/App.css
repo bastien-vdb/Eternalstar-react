@@ -1,22 +1,69 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navMenu {
+  z-index: 10;
+  background-color: gray;
+  position: fixed;
+  width: 30em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navMenu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.navMenu ul li{
+  display: block;
+  padding: 0.3em;
+} 
+
+.navMenu ul li a{
+  color: black;
+  transition: all 1s;
+}
+
+.navMenu ul li a:hover, .navMenu ul li a:active{
+  color: white;
+}
+
+@media (max-width: 700px) {
+
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
 /*ANTD*/
 
-.ant-anchor-link-active > .ant-anchor-link-title {
+/* .ant-anchor-link-active > .ant-anchor-link-title {
   color: white;
 }
 
 .ant-anchor-link > .ant-anchor-link-title:hover {
   color:white;
-}
+} */
 
-.App {
-  text-align: center;
-}
+ /*Large screen */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
+/*
 .mainMenuDiv {
   z-index:10;
   position: fixed;
@@ -36,17 +83,10 @@
   margin-right: 20px;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@media (max-width: 700px) {
-
-  .mainMenuDiv {
+/*Mobile screen*/
+/* .mainMenuDiv {
     margin-left: 0;
     margin-right: 0;
   }
@@ -62,15 +102,6 @@
     display: none;
   }
 
-}
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
