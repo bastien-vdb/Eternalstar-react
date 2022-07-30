@@ -26,6 +26,7 @@ function App() {
                     </div>
                     <nav style={{display:isMenuMobileVisible}} className='navMenuMobile' onClick={()=>{setMenuMobileVisible('none'); setBurgerMenuVisible('flex')}}>
                       <ul>
+                        <li style={{border:'1px solid white', width:'2em'}}><a href="#">X</a></li>
                         <li><a href="#">Acceuil</a></li>
                         <li><a href="#nos_services">Nos services</a></li>
                         <li><a href="#contact">Nous contacter</a></li>

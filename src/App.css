@@ -51,6 +51,7 @@
     position: fixed;
     background-color: gray;
     cursor: pointer;
+    border-bottom-right-radius: 5px;
   }
 
   .burgerButton span {
@@ -78,6 +79,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0.3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .navMenuMobile ul li {
@@ -85,11 +90,11 @@
   }
 
   .navMenuMobile ul li:hover, .navMenuMobile ul li:active{
-    color: white;
+    color: black;
   }
 
   .navMenuMobile ul li a {
-    color: black;
+    color: white;
   }
 }
 
