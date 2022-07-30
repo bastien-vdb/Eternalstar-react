@@ -30,12 +30,67 @@
   transition: all 1s;
 }
 
+.navMenuMobile {
+  display: none;
+}
+
 .navMenu ul li a:hover, .navMenu ul li a:active{
   color: white;
 }
 
 @media (max-width: 700px) {
 
+  .burgerButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0.3em;
+    z-index: 15;
+    width: fit-content;
+    height: 2em;
+    position: fixed;
+    background-color: gray;
+    cursor: pointer;
+  }
+
+  .burgerButton span {
+    display: block;
+    background-color: white;
+    height: 0.01em;
+    width: 2.5em;
+  }
+
+  .navMenu{
+    display: none;
+  }
+
+  .navMenuMobile {
+    display: block; 
+    position: fixed;
+    z-index: 10;
+    padding: 0 0.4em;
+    background-color: gray;
+    border-bottom-right-radius: 5px;
+    display: none;
+  }
+
+  .navMenuMobile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.3em 0;
+  }
+
+  .navMenuMobile ul li {
+    margin: 1em 0;
+  }
+
+  .navMenuMobile ul li:hover, .navMenuMobile ul li:active{
+    color: white;
+  }
+
+  .navMenuMobile ul li a {
+    color: black;
+  }
 }
 
 .App-header {

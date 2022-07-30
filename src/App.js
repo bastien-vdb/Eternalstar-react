@@ -1,20 +1,41 @@
 import HomePage from './HomePage/HomePage.jsx';
-import {Anchor} from 'antd';
-import 'antd/dist/antd.css';
 import './App.css';
-
-const { Link } = Anchor;
+import { useState } from 'react';
+import Media from 'react-media';
 
 function App() {
+  const [isMenuMobileVisible, setMenuMobileVisible] = useState('none');
+  const [isBurgerMenuVisible, setBurgerMenuVisible] = useState('flex');
   return (
     <div className="App">
-      <nav className='navMenu'>
-        <ul>
-          <li><a href="#">Acceuil</a></li>
-          <li><a href="#nos_services">Nos services</a></li>
-          <li><a href="#contact">Nous contacter</a></li>
-        </ul>
-      </nav>
+      <Media query="(min-width:700px)">
+                {(matches)=> matches ? (
+                  <nav className='navMenu'>
+                  <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#nos_services">Nos services</a></li>
+                    <li><a href="#contact">Nous contacter</a></li>
+                  </ul>
+                </nav>
+                ) : (
+                  <div>
+                    <div className='burgerButton' style={{display:isBurgerMenuVisible}} onClick={()=>{setMenuMobileVisible('flex'); setBurgerMenuVisible('none')}}>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <nav style={{display:isMenuMobileVisible}} className='navMenuMobile' onClick={()=>{setMenuMobileVisible('none'); setBurgerMenuVisible('flex')}}>
+                      <ul>
+                        <li><a href="#">Acceuil</a></li>
+                        <li><a href="#nos_services">Nos services</a></li>
+                        <li><a href="#contact">Nous contacter</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                )}
+            </Media> 
+      
+      
       <HomePage/>
     </div>
   );
