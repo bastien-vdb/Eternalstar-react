@@ -109,7 +109,7 @@ function HomePage () {
             <section className="hero">
                 <div className="heroG">
                     <div style={{width:'100%'}}>
-                        <h1 className='eternal_title eternal_title2'>Devenez un acteur reconnu dans le WEB3.0</h1>
+                        <h1 className='eternal_title2'>Devenez un acteur reconnu dans le WEB3.0</h1>
                         <p>Tout savoir sur notre offre</p>   
                         <Anchor>
                         <button className="btn">

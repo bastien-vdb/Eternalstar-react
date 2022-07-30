@@ -113,6 +113,11 @@ a .btn {
     font-size: xx-large;
 }
 
+.eternal_title2 {
+    color: white;
+    font-size: xx-large;
+}
+
 .hero .heroD, .hero .heroG {
     width: 50%;
     height: 100%;
@@ -364,6 +369,10 @@ footer {
 /* Responsive */
 
 @media all and (max-width: 767px) {
+    .eternal_title2 {
+        font-size: xx-small;
+    }
+
     .hero, .hero_travaillez_avec_nous, .heroContact  {
         flex-direction: column;
     }
@@ -375,6 +384,11 @@ footer {
 
     .hero .heroG div h1 {
         font-size: 2rem;
+    }
+
+    .heroContact .heroD_3 {
+        width: 100%;
+        height: 30em;
     }
 
     .team__flex {
