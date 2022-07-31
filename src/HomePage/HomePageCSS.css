@@ -330,8 +330,8 @@ a .btn {
     color: var(--color5);
     font-size: 1rem;
     font-weight: 300;
-    text-transform: uppercase;
-    list-style-type: none;
+    list-style-type:circle;
+    text-align: justify;
 }
 
 .team__flex {
