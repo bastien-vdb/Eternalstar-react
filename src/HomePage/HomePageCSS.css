@@ -332,6 +332,7 @@ a .btn {
     font-weight: 300;
     list-style-type:circle;
     text-align: justify;
+    margin-left: 1.5em;
 }
 
 .team__flex {
